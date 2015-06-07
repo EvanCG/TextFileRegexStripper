@@ -6,7 +6,7 @@ outputFilePath = raw_input('Output text file > ')
 # Open the new file in prep for output
 outputFile = open(outputFilePath, 'w')
 
-pattern = re.compile(r'http://www(1)?.[a-z]*.[^>]*')
+pattern = re.compile(r'http://www(1)?.[a-z]*.[^><]*')
 
 with open(inputFilePath, "rb") as f:
 	for line in f:
